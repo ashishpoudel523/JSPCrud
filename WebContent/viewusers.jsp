@@ -4,13 +4,13 @@
 <title>View Users</title>
 </head>
 <body>
-	<%@page import="com.dao.UserDao,com.bean.*,java.util.*"%>
+	<%@page import="com.dao.StudentDao,com.bean.*,java.util.*"%>
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 	<h1>Users List</h1>
 
 	<%
-	List<User> list = UserDao.getAllRecords();
-	request.setAttribute("users", list);
+	List<Student> list = StudentDao.getAllRecords();
+			request.setAttribute("users", list);
 	%>
 
 	<table border="1" width="90%">

@@ -5,11 +5,11 @@
 <title>Edit Form</title>
 </head>
 <body>
-<%@page import="com.dao.UserDao,com.bean.User"%>
+<%@page import="com.dao.StudentDao,com.bean.Student"%>
 
 <%
 String id=request.getParameter("id");
-User u=UserDao.getRecordById(Integer.parseInt(id));
+Student u=StudentDao.getRecordById(Integer.parseInt(id));
 %>
 
 <h1>Edit Form</h1>
